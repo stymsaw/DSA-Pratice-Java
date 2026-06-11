@@ -80,7 +80,7 @@ public abstract class RecursionLevel1 {
 
     public abstract void reverseArray(int[] arr);
 
-    public abstract boolean isSorted(int[] arr, int index);
+    public abstract boolean isSorted(int[] arr);
 
     public abstract boolean linearSearch(int[] arr, int target);
 

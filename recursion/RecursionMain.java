@@ -9,10 +9,10 @@ public class RecursionMain {
         var rL1 = new ArrayRecursion();
         var arr = new int[]{1, 2, 3, 4, 5, 6};
 
-        boolean search = rL1.linearSearch(arr, 5);
-        int i = rL1.firstOccurrence(arr, 55);
         rL1.reverseArray(arr);
-
+        System.out.println(rL1.isSorted(arr));
+        System.out.println(rL1.linearSearch(arr, 1));
+        System.out.println(rL1.firstOccurrence(arr, 1));
         System.out.println(rL1.lastOccurrence(arr, 1));
 
     }
