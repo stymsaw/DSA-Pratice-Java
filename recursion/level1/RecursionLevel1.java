@@ -1,4 +1,4 @@
-package com.company.recursion.level1;
+package recursion.level1;
 
 public abstract class RecursionLevel1 {
 
@@ -54,15 +54,15 @@ public abstract class RecursionLevel1 {
 
     // B. Recursive Mathematics
 
-//    public abstract int sumOfFirstNNumbers(int n);
+    public abstract int sumOfFirstNNumbers(int n);
 
-//    public abstract int sumOfArray(int[] arr);
+    public abstract int sumOfArray(int[] arr);
 
-//    public abstract int factorialParameterized(int n);
+    public abstract int factorialParameterized(int n);
 
-//    public abstract int countDigits(int number);
+    public abstract int countDigits(int number);
 
-//    public abstract int sumOfDigits(int number);
+    public abstract int sumOfDigits(int number);
 
 
     // C. Functional Recursion
