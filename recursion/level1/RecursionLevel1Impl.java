@@ -2,6 +2,10 @@ package com.company.recursion.level1;
 
 public class RecursionLevel1Impl extends RecursionLevel1 {
 
+    @Override
+    public void reverseArray(int[] arr) {
+        reverseArray(arr, 0, arr.length - 1);
+    }
 
     @Override
     public boolean isSorted(int[] arr, int index) {
@@ -10,14 +14,21 @@ public class RecursionLevel1Impl extends RecursionLevel1 {
         return isSorted(arr, index + 1);
     }
 
-    public void reverseArray(int[] arr) {
-        reverseArray(arr, 0, arr.length - 1);
+    @Override
+    public boolean linearSearch(int[] arr, int target) {
+        return linearSearch(arr, target, 0);
     }
 
-    public void reverseArray(int[] arr, int start, int end) {
+    private void reverseArray(int[] arr, int start, int end) {
         if (start >= end) return;
         swapNumbers(arr, start, end);
         reverseArray(arr, start + 1, end - 1);
+    }
+
+    private boolean linearSearch(int[] arr, int target, int index) {
+        if (index > arr.length - 1) return false;
+        if (arr[index] == target) return true;
+        return linearSearch(arr, target, index + 1);
     }
 
     private static void swapNumbers(int[] arr, int start, int end) {
@@ -25,5 +36,28 @@ public class RecursionLevel1Impl extends RecursionLevel1 {
         arr[start] = arr[end];
         arr[end] = temp;
     }
+
+    @Override
+    public int firstOccurrence(int[] arr, int target) {
+        return firstOccurrence(arr, target, 0);
+    }
+
+    @Override
+    public int lastOccurrence(int[] arr, int target) {
+        return lastOccurrence(arr, target, 0, -1);
+    }
+
+    private int lastOccurrence(int[] arr, int target, int index, int lastSeen) {
+        if (index > arr.length - 1) return lastSeen;
+        if (arr[index] == target) lastSeen = index;
+        return lastOccurrence(arr, target, index + 1, lastSeen);
+    }
+
+    private int firstOccurrence(int[] arr, int target, int index) {
+        if (index > arr.length - 1) return -1;
+        if (arr[index] == target) return index;
+        return firstOccurrence(arr, target, index + 1);
+    }
+
 
 }

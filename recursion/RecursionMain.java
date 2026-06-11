@@ -7,19 +7,24 @@ import java.util.Arrays;
 
 public class RecursionMain {
 
-    public static void main(String[] args) {
-
-        var arr = new int[]{1, 2, 3, 4, 5, 6};
-        var arr1 = new int[]{1, 2, 3, 4, 6};
+    public static void main1(String[] args) {
 
         var rL1 = new RecursionLevel1Impl();
+        var arr = new int[]{1, 2, 3, 4, 5, 6};
 
-        System.out.println(Arrays.toString(arr));
+        boolean search = rL1.linearSearch(arr, 5);
+        int i = rL1.firstOccurrence(arr, 55);
         rL1.reverseArray(arr);
-        System.out.println(Arrays.toString(arr));
 
-//        System.out.println(rL1.isSorted(arr, 0));
-//        System.out.println(rL1.isSorted(arr1, 0));
+        System.out.println(rL1.lastOccurrence(arr, 1));
+
+    }
+
+    public static void main(String[] args) {
+
+        var rL1 = new RecursionLevel1Impl();
+        var arr = new int[]{1, 2, 3, 4, 5, 6, 1};
+
 
 
     }

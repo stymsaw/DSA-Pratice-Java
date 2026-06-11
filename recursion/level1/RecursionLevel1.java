@@ -1,110 +1,103 @@
 package com.company.recursion.level1;
 
-public class RecursionLevel1 {
+public abstract class RecursionLevel1 {
+
+    /*
+     * Level 1 Progress Tracker
+     *
+     * Basic Recursion
+     * [R01] Print N To 1                ⏳
+     * [R02] Print 1 To N Backtracking   ⏳
+     * [R03] Print N To 1 Backtracking   ⏳
+     * [R04] Print Name N Times          ⏳
+     *
+     * Recursive Mathematics
+     * [R05] Sum Of First N Numbers      ⏳
+     * [R06] Sum Of Array                ⏳
+     * [R07] Factorial (Parameterized)   ⏳
+     * [R08] Count Digits                ⏳
+     * [R09] Sum Of Digits               ⏳
+     *
+     * Functional Recursion
+     * [R10] Factorial                   ⏳
+     * [R11] Fibonacci                   ⏳
+     * [R12] Power                       ⏳
+     * [R13] Find Max                    ⏳
+     *
+     * Array Recursion
+     * [R14] Reverse Array               ✅
+     * [R15] Is Sorted                   ✅
+     * [R16] Linear Search               ⏳
+     * [R17] First Occurrence            ✅
+     * [R18] Last Occurrence             ⏳
+     *
+     * String Recursion
+     * [R19] Is Palindrome               ⏳
+     * [R20] Reverse String              ⏳
+     * [R21] Remove Character            ⏳
+     * [R22] Replace Pi                  ⏳
+     * [R23] Remove Consecutive Dups     ⏳
+     */
 
     // A. Basic Recursion
 
-    void print1ToN(int n) {
+//    abstract public void print1ToN(int n);
 
-    }
+//    public abstract void printNTo1(int n);
 
-    void printNTo1(int n) {
-    }
+//    public abstract void print1ToNBacktracking(int n);
 
-    void print1ToNBacktracking(int n) {
-    }
+//    public abstract void printNTo1Backtracking(int n);
 
-    void printNTo1Backtracking(int n) {
-    }
-
-    void printNameNTimes(String name, int n) {
-    }
+//    public abstract void printNameNTimes(String name, int n);
 
 
     // B. Recursive Mathematics
 
-    int sumOfFirstNNumbers(int n) {
-        return n;
-    }
+//    public abstract int sumOfFirstNNumbers(int n);
 
-    int sumOfArray(int[] arr) {
-        return 0;
-    }
+//    public abstract int sumOfArray(int[] arr);
 
-    int factorialParameterized(int n) {
-        return n;
-    }
+//    public abstract int factorialParameterized(int n);
 
-    int countDigits(int number) {
-        return number;
-    }
+//    public abstract int countDigits(int number);
 
-    int sumOfDigits(int number) {
-        return number;
-    }
+//    public abstract int sumOfDigits(int number);
 
 
     // C. Functional Recursion
 
-    int factorial(int n) {
-        return n;
-    }
+//    public abstract int factorial(int n);
 
-    int fibonacci(int n) {
-        return n;
-    }
+//    public abstract int fibonacci(int n);
 
-    long power(int x, int n) {
-        return 0;
-    }
+//    public abstract long power(int x, int n);
 
-    int findMax(int[] arr) {
-        return 0;
-    }
+//    public abstract int findMax(int[] arr);
 
 
     // D. Array Recursion
 
-    void reverseArray(int[] arr) {
+    public abstract void reverseArray(int[] arr);
 
-    }
+    public abstract boolean isSorted(int[] arr, int index);
 
-    boolean isSorted(int[] arr, int index) {
-        return false;
-    }
+    public abstract boolean linearSearch(int[] arr, int target);
 
-    boolean linearSearch(int[] arr, int target) {
-        return false;
-    }
+    public abstract int firstOccurrence(int[] arr, int target);
 
-    int firstOccurrence(int[] arr, int target) {
-        return target;
-    }
-
-    int lastOccurrence(int[] arr, int target) {
-        return target;
-    }
+    public abstract int lastOccurrence(int[] arr, int target);
 
 
     // E. String Recursion
 
-    boolean isPalindrome(String s) {
-        return false;
-    }
+//    public abstract boolean isPalindrome(String s);
 
-    String reverseString(String s) {
-        return s;
-    }
+//    public abstract String reverseString(String s);
 
-    String removeCharacter(String s, char ch) {
-        return s;
-    }
+//    public abstract String removeCharacter(String s, char ch);
 
-    String replacePi(String s) {
-        return s;
-    }
+//    public abstract String replacePi(String s);
 
-    String removeConsecutiveDuplicates(String s) {
-        return s;
-    }
+//    public abstract String removeConsecutiveDuplicates(String s);
 }
