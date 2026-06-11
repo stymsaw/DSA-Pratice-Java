@@ -8,7 +8,11 @@ public class ArrayRecursion extends RecursionLevel1 {
     }
 
     @Override
-    public boolean isSorted(int[] arr, int index) {
+    public boolean isSorted(int[] arr) {
+        return isSorted(arr, 0);
+    }
+
+    private boolean isSorted(int[] arr, int index) {
         if (index == arr.length - 1) return true;
         if (arr[index] > arr[index + 1]) return false;
         return isSorted(arr, index + 1);
