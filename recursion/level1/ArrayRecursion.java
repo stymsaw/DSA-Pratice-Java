@@ -1,6 +1,6 @@
 package com.company.recursion.level1;
 
-public class RecursionLevel1Impl extends RecursionLevel1 {
+public class ArrayRecursion extends RecursionLevel1 {
 
     @Override
     public void reverseArray(int[] arr) {
