@@ -16,5 +16,5 @@ public abstract class FunctionalRecursion {
 
     public abstract long power(int x, int n);
 
-//    public abstract int findMax(int[] arr);
+    public abstract int findMax(int[] arr);
 }

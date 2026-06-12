@@ -14,7 +14,7 @@ public class RecursionMain {
         var str = new StringRecursionImpl();
         var funRec = new FunctionalRecursionImpl();
 
-        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] nums = {1, 2, 3, 4, 55, 6, 7, 8, 9, 10};
 
         // array recursion
 //        arr.reverseArray(nums);
@@ -36,7 +36,11 @@ public class RecursionMain {
         // function recursion
 //        System.out.println(funRec.factorial(11));
 
+//        System.out.println(funRec.power(3,3));
 
+//        System.out.println(funRec.fibonacci(6));
+
+        System.out.println(funRec.findMax(nums));
 
     }
 }
