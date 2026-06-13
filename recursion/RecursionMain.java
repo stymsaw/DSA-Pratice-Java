@@ -40,7 +40,9 @@ public class RecursionMain {
 
 //        System.out.println(funRec.fibonacci(6));
 
-        System.out.println(funRec.findMax(nums));
+//        System.out.println(funRec.findMax(nums));
+
+        System.out.println(str.reverseString("sdag"));
 
     }
 }

@@ -1,0 +1,311 @@
+Goal:
+Learn patterns, not individual questions.
+
+Recommended Learning Order:
+1. Two Pointers
+2. Prefix Sum
+3. Kadane's Algorithm
+4. Sliding Window
+5. Monotonic Stack
+6. Monotonic Deque
+7. Binary Search on Arrays
+8. In-place Array Manipulation
+
+=========================================
+PATTERN 1: TWO POINTERS
+=========================================
+
+Purpose:
+Optimize brute-force O(n²) solutions into O(n).
+
+Variants:
+
+1. Opposite Direction
+   - Left pointer starts at beginning
+   - Right pointer starts at end
+
+   Examples:
+   - Two Sum II
+   - Container With Most Water
+   - Trapping Rain Water
+
+2. Same Direction
+   - Slow pointer
+   - Fast pointer
+
+   Examples:
+   - Remove Duplicates from Sorted Array
+   - Move Zeroes
+
+3. Sorting + Two Pointers
+
+   Examples:
+   - 3Sum
+   - 4Sum
+
+Must Know:
+- Duplicate handling
+- In-place modification
+- Sorted array optimizations
+
+Practice:
+- Two Sum II
+- Container With Most Water
+- 3Sum
+- Trapping Rain Water
+- Move Zeroes
+
+=========================================
+PATTERN 2: PREFIX SUM
+=========================================
+
+Purpose:
+Quick range-sum calculations.
+
+Formula:
+
+prefix[i] = prefix[i-1] + nums[i]
+
+Variants:
+
+1. Range Sum Queries
+
+2. Subarray Count Problems
+
+3. Subarray Existence Problems
+
+4. Prefix Sum + HashMap
+
+Most Important Variant:
+Prefix Sum + HashMap
+
+Practice:
+- Range Sum Query
+- Subarray Sum Equals K
+- Continuous Subarray Sum
+
+Recognition Hint:
+Whenever the problem mentions:
+- Subarray
+- Sum
+- Count of subarrays
+
+Think Prefix Sum first.
+
+=========================================
+PATTERN 3: KADANE'S ALGORITHM
+=========================================
+
+Purpose:
+Maximum subarray problems.
+
+Variants:
+
+1. Maximum Sum Subarray
+
+2. Maximum Product Subarray
+
+3. Circular Maximum Subarray
+
+Core Idea:
+
+currentSum = max(num, currentSum + num)
+
+Practice:
+- Maximum Subarray
+- Maximum Product Subarray
+- Maximum Sum Circular Subarray
+
+Recognition Hint:
+Whenever you see:
+"Maximum contiguous subarray"
+
+Think Kadane.
+
+=========================================
+PATTERN 4: SLIDING WINDOW
+=========================================
+
+Most Important Array Pattern.
+
+Purpose:
+Avoid recomputing for every subarray.
+
+Variants:
+
+1. Fixed Window
+
+   Examples:
+   - Maximum Average Subarray
+
+2. Variable Window
+
+   Examples:
+   - Longest Substring Without Repeating Characters
+   - Minimum Window Substring
+
+3. Sliding Window + HashMap
+
+4. Sliding Window + Frequency Count
+
+Core Operations:
+
+Expand:
+right++
+
+Shrink:
+left++
+
+Practice:
+- Maximum Average Subarray
+- Longest Substring Without Repeating Characters
+- Longest Repeating Character Replacement
+- Minimum Window Substring
+
+Recognition Hint:
+Whenever you see:
+- Longest
+- Shortest
+- Continuous
+- Subarray
+- Substring
+
+Think Sliding Window.
+
+=========================================
+PATTERN 5: MONOTONIC STACK
+=========================================
+
+Purpose:
+Find next/previous greater or smaller elements.
+
+Variants:
+
+1. Next Greater Element
+
+2. Previous Greater Element
+
+3. Next Smaller Element
+
+4. Histogram Problems
+
+Practice:
+- Next Greater Element I
+- Daily Temperatures
+- Largest Rectangle in Histogram
+
+Recognition Hint:
+Whenever you see:
+Nearest greater/smaller element
+
+Think Monotonic Stack.
+
+=========================================
+PATTERN 6: MONOTONIC DEQUE
+=========================================
+
+Purpose:
+Maintain max/min efficiently inside a window.
+
+Variants:
+
+1. Sliding Window Maximum
+
+2. Sliding Window Minimum
+
+3. Constraint-based Subarrays
+
+Practice:
+- Sliding Window Maximum
+- Shortest Subarray with Sum At Least K
+
+Recognition Hint:
+Whenever Sliding Window asks:
+- Maximum
+- Minimum
+
+Think Monotonic Deque.
+
+=========================================
+PATTERN 7: BINARY SEARCH ON ARRAYS
+=========================================
+
+Variants:
+
+1. Classic Binary Search
+
+2. Search in Rotated Array
+
+3. Find Peak
+
+4. Binary Search on Answer
+
+Practice:
+- Binary Search
+- Search in Rotated Sorted Array
+- Find Peak Element
+- Koko Eating Bananas
+- Capacity to Ship Packages Within D Days
+
+Recognition Hint:
+Whenever the answer space is sorted,
+think Binary Search.
+
+=========================================
+PATTERN 8: IN-PLACE ARRAY MANIPULATION
+=========================================
+
+Purpose:
+Solve with O(1) extra space.
+
+Variants:
+
+1. Swapping
+
+2. Reversal
+
+3. Cyclic Placement
+
+4. Partitioning
+
+Practice:
+- Move Zeroes
+- Rotate Array
+- Remove Duplicates from Sorted Array
+- Sort Colors
+- First Missing Positive
+
+Must Know:
+- Reverse array
+- Swap elements
+- Partition around pivot
+
+=========================================
+TOP 10 ARRAY QUESTIONS
+=========================================
+
+1. Two Sum
+2. 3Sum
+3. Container With Most Water
+4. Maximum Subarray
+5. Subarray Sum Equals K
+6. Product of Array Except Self
+7. Sliding Window Maximum
+8. Trapping Rain Water
+9. Search in Rotated Sorted Array
+10. Daily Temperatures
+
+=========================================
+ARRAY INTERVIEW CHECKLIST
+=========================================
+
+✓ Two Pointers
+✓ Prefix Sum
+✓ Kadane
+✓ Sliding Window
+✓ Monotonic Stack
+✓ Monotonic Deque
+✓ Binary Search
+✓ In-place Manipulation
+
+```

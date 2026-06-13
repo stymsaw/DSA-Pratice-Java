@@ -15,10 +15,23 @@ public class StringRecursionImpl extends StringRecursion {
         return isPalindrome(string, start + 1, end - 1);
     }
 
-
     @Override
     public String reverseString(String s) {
-        return ""; // TODO
+        return reverseString(s, 0, s.length() - 1);
+    }
+
+    private String reverseString(String string, int start, int end) {
+        if (start >= end) return string;
+        string = swapChars(string, start, end);
+        return reverseString(string, start + 1, end - 1);
+    }
+
+    private String swapChars(String string, int start, int end) {
+        var sb = new StringBuilder(string);
+        char temp = string.charAt(start);
+        sb.setCharAt(start, sb.charAt(end));
+        sb.setCharAt(end, temp);
+        return sb.toString();
     }
 
     @Override
