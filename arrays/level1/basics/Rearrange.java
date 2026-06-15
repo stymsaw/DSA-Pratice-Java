@@ -9,6 +9,8 @@ public abstract class Rearrange {
      * [A06] rotateByK  ☐
      */
 
+    // test commit
+
     public abstract void reverse(int[] arr);
 
     public abstract void moveZeros(int[] arr);
